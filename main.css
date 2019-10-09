@@ -1,6 +1,12 @@
-.main {display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;}
+body {margin: 0; font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 1rem;}
 
-.button {  background-color: #4CAF50;
+.main {display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;}
+
+.button {background-color: #4CAF50;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -10,3 +16,22 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;}
+
+ul.topnav {list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;}
+
+ul.topnav li {float: right; color: #000;}
+
+ul.topnav li a {display: block;
+  text-align: center;
+  padding: 18px 24px;
+  text-decoration: none;
+  color: #111;}
+
+ul.topnav li a:hover:not(.active) {background-color: #4CAF50;}
+ul.topnav li a.active {background-color: #4CAF50;}
+
+@media screen and (max-width: 600px) {ul.topnav li {float: none;}}
